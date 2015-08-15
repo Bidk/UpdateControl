@@ -1,0 +1,326 @@
+.widget {
+	font-size: 0.9em;
+	background: #EEE;
+}
+
+.widget .content {
+	background: #EEE;
+	padding: 10px;
+}
+
+.widget .title {
+	padding: 5px 10px;
+	background: #E0E0E0;
+	font-size: 11pt;
+	margin: 0;
+	border-bottom: 1px solid transparent;
+}
+
+.widget.small .title {
+	padding-top: 4px;
+	padding-bottom: 4px;
+	font-size: 10pt;
+}
+
+.widget a {
+	color: #638304;
+}
+.widget ul {
+	margin: 0;
+}
+.widget li {
+	margin-left: 20px !important;
+}
+.widget .links ul li {
+	color: #999;
+	list-style-type: square;
+}
+.widget .links ul li a, .widget .links ul li span {
+	background: none;
+	color: #526574;
+	display: block;
+	padding: 3px;
+	text-decoration: none;
+	border-top: 1px solid transparent;
+	border-bottom: 1px solid #DDD;
+}
+.widget .links ul li a:hover {
+	color: #2d4a60;
+	background: #E0E0E0;
+	border-top: 1px solid #F0F0F0;
+	border-bottom: 1px solid #CCC;
+}
+.widget .links ul li.current a {
+	font-weight: bold;
+}
+
+.widget.collapsible .title {
+	padding-left: 30px;
+	/*background-image: url(/images/icons/collapse-icon.png);*/
+	background-repeat: no-repeat;
+	background-position: 5px center;
+	cursor: pointer;
+}
+
+.widget.collapsible .title:hover {
+	background-color: #D7D7D7;
+}
+
+.widget.collapsible.collapsed .title {
+	border-bottom: 1px solid #D2D2D2;
+	background-image: url(/bundles/images/icons/expand-icon.png);
+}
+
+.widget.collapsible.collapsed .content {
+	display: none;
+}
+
+/* Darker */
+.widget.darker .title, .widget.darker.collapsible.collapsed .title:hover {
+	background-color: #DDD;
+	color: #444;
+	border-bottom: 1px solid #AAA;
+}
+
+.widget.darker.collapsible.collapsed .title {
+	background-color: #CCC;
+	border-bottom: 1px solid #AAA;
+}
+/* Dark */
+.widget.dark .title {
+	background-color: #444;
+	color: #EEE;
+}
+
+.widget.dark .title:hover {
+	background-color: #555;
+	color: #EEE;
+}
+
+.widget.dark.collapsible.collapsed .title {
+	border-bottom: 1px solid #666;
+}
+
+
+/* */
+
+.button, a.button {
+	text-shadow: 0px 1px 0px #FFF;
+	padding: 3px 5px;
+	text-decoration: none;
+	font-size: 10pt;
+	color: #777;
+	/*text-shadow: 0 0px 1px #003548;*/
+	display: inline-block;
+	
+	background: #638304 url(/images/green-gradient.png);
+	border-color: #546f05;
+	color: #FFF;
+	
+	border-radius: 3px;
+	background: #fafafa;
+	color: #666;
+	border: 1px solid #CCC;
+	text-shadow: 0 1px 0 #FFF;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+	
+	background-image: linear-gradient(bottom, rgb(240,240,240) 1%, rgb(250,250,250) 51%);
+	background-image: -o-linear-gradient(bottom, rgb(240,240,240) 1%, rgb(250,250,250) 51%);
+	background-image: -moz-linear-gradient(bottom, rgb(240,240,240) 1%, rgb(250,250,250) 51%);
+	background-image: -webkit-linear-gradient(bottom, rgb(240,240,240) 1%, rgb(250,250,250) 51%);
+	background-image: -ms-linear-gradient(bottom, rgb(240,240,240) 1%, rgb(250,250,250) 51%);
+	
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.01, rgb(240,240,240)),
+		color-stop(0.51, rgb(250,250,250))
+	);
+	
+	padding: 3px 7px;
+	font-size: 0.9em;
+	font-weight: bold;
+	
+	cursor: pointer;
+}
+
+a.button.small {
+	padding: 2px 5px;
+	border-radius: 3px;
+	moz-border-radius: 3px;
+	font-size: 0.9em;
+}
+
+.button:hover {
+	background-color: #FFF;
+	border: 1px solid #BBB;
+}
+.button.disabled {
+	background: #EEE;
+	border: 1px solid #DDD;
+	box-shadow: none;
+	color: #777;
+	cursor: default;
+}
+
+.button.icon {
+	background-position-x: 2px;
+	padding-left: 20px;
+	background-repeat: no-repeat;
+}
+
+.sticky-back {
+	position: fixed;
+	top: 100%;
+	left: 50%;
+	margin-left: -560px;
+	margin-top: -40px;
+	z-index: 1000;
+}
+
+a.btn {
+	text-decoration: none;
+}
+
+/* Tabs */
+
+.tabs-widget {
+	margin-bottom: 10px;
+}
+
+
+.tabs-widget.normal > ul {
+	border-bottom: 1px solid #0e5971;
+	border-bottom: 1px solid #2f4866;
+	padding-top: 5px;
+	margin: 0;
+	margin-bottom: 15px;
+	clear: both;
+	display: block;
+	height: 29px;
+	padding-left: 20px;
+}
+
+.tabs-widget.normal > ul > li {
+	margin: 0;
+	padding: 0;
+	margin-right: 5px;
+	float: left;
+	list-style-type: none;
+	display: block;
+}
+
+.tabs-widget.normal > ul > li > a {
+	text-decoration: none;
+	display: block;
+	padding: 5px 15px;
+	background: url(/bundles/images/shadow-light.png) bottom;
+	background: #eee;
+	color: #333;
+	cursor: pointer;
+	height: 18px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	border: 1px solid transparent;
+	border-bottom: 0;
+}
+
+.tabs-widget.normal > ul > li > a:hover{
+	background: url(/bundles/images/shadow.png) bottom;
+	background: #DDD;
+}
+
+.tabs-widget.normal > ul > li > a.selected {
+	color: #aae7fb;
+	color: #fff;
+	background: url(/bundles/images/blue-gradient-2.png) bottom;
+	background: #2f4866;
+	height: 19px;
+	/*text-shadow: 0px 2px 0px #0e5971;*/
+}
+
+.tabs-widget.normal > div {
+	padding: 15px;
+	padding-top: 0;
+	overflow: auto;
+}
+
+.tabs-widget.normal.border > div {
+	border: 1px solid #0e5971;
+}
+
+.tabs-widget.normal > div.hidden {
+	position: absolute;
+	left: -100000px;
+}
+
+.tabs-widget.small {
+	font-size: 0.9em;
+}
+.tabs-widget.small > ul {
+	height: 23px;
+}
+.tabs-widget.small > ul > li > a {
+	padding: 2px 15px;
+}
+.tabs-widget.small > div {
+	border: 1px solid #0e5971;
+	border-top: 0;
+	padding: 15px;
+	margin-top: -15px;
+}
+
+.nav-tabs a {
+	cursor: pointer;
+	font-weight: bold;
+	font-family: arial;
+}
+
+/* map */
+#map-canvas {
+	margin: auto;
+	/*margin-bottom: 20px !important;*/
+}
+#map-bar {
+	width: 100%;
+	z-index: 99999;
+	display: block;
+	text-align: right;
+}
+#map-bar > ul {
+	margin: 0;
+	padding: 0;
+	font-size: 0.8em;
+	margin-right: 0;
+	z-index: 9999;
+}
+#map-bar > ul > li {
+	margin: 0;
+	padding: 0;
+	display: block;
+	float: right;
+	padding-right: 5px;
+}
+
+#map-bar > ul > li > a {
+	text-decoration: none;
+	display: block;
+	padding: 2px 15px;
+	background: url(/bundles/images/shadow-light.png) bottom;
+	color: #333;
+	cursor: pointer;
+	border: 1px solid #666;
+	border-bottom: 0;
+}
+
+#map-bar > ul > li > a:hover {
+	background: url(/bundles/images/shadow-light.png) center;
+}
+
+#map-bar > ul > li > a.selected {
+	background: #EEE;
+	border: 1px solid #333;
+	border-bottom: 0;
+}
+
